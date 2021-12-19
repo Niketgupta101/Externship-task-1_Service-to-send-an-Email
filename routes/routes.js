@@ -28,7 +28,7 @@ route.post('/sendEmail',(req,res) => {
         saveSendData(existingData);
         res.send({ success: true, message: 'Email sent successfully'});
     } catch (error) {
-        res.send({ success: 'false', message: error.message});
+        res.send({ success: false, message: error.message});
     }
 });
 
